@@ -1,0 +1,139 @@
+@import "tailwindcss";
+@tailwind utilities;
+
+/* ===== 텍스트 등장 애니메이션 ===== */
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeUp {
+  animation: fadeUp 1s ease-out forwards;
+  animation-delay: 0s;
+}
+
+.animate-fadeup-2 {
+  opacity: 0;
+  animation: fadeUp 1s ease-out forwards;
+  animation-delay: 0.5s;
+}
+
+.animate-fadeup-3 {
+  opacity: 0;
+  animation: fadeUp 1s ease-out forwards;
+  animation-delay: 0.7s;
+}
+
+/* ===== 텍스트 퇴장 애니메이션 ===== */
+@keyframes fadeUpOut {
+  0% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(-20px); }
+}
+
+.animate-fadeUpOut {
+  animation: fadeUpOut 0.7s ease-out forwards;
+}
+
+/* ===== 배경 등장 애니메이션 (밑에서 위로 차오름) ===== */
+@keyframes bgFill {
+  0% {
+    background: linear-gradient(to top, var(--bg-color) 0%, rgba(173, 255, 47, 0) 100%);
+    background-size: 100% 0%;
+    background-repeat: no-repeat;
+  }
+  100% {
+    background: linear-gradient(to top, var(--bg-color) 0%, rgba(173, 255, 47, 0) 100%);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+}
+
+/* ===== 배경 사라짐 애니메이션 (위로 사라짐) ===== */
+@keyframes bgClear {
+  0% {
+    background: linear-gradient(to top, var(--bg-color) 0%, rgba(173, 255, 47, 0) 100%);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+  100% {
+    background: linear-gradient(to top, var(--bg-color) 0%, rgba(173, 255, 47, 0) 100%);
+    background-size: 100% 0%;
+    background-repeat: no-repeat;
+  }
+}
+
+.bg-anim-in {
+  animation: bgFill 1.1s ease-out forwards;
+}
+
+.bg-anim-out {
+  animation: bgClear 1.0s ease-out forwards;
+}
+
+/* ===== 배경 색상 프리셋 ===== */
+.brb {
+  --bg-color: rgb(167, 66, 210);
+}
+
+.brr {
+  --bg-color: rgb(237, 25, 25);
+}
+
+.brw {
+  --bg-color: rgb(228, 228, 228);
+}
+
+.brg {
+  --bg-color: rgb(88, 245, 67);
+}
+
+/* ===== 폰트 ===== */
+@font-face {
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/font.woff2') format('woff2');
+}
+
+.font-juache {
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.texthovercolor h4 {
+  transition: all 0.5s ease-out;
+}
+
+.texthovercolor h4:hover {
+  background: linear-gradient(90deg, #fff8e1, #ffeb3b, #ffc107);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.maintext {
+  transition: all 0.5s ease-out;
+}
+
+.maintext:hover {
+    background: linear-gradient(90deg, #fff8e1, #ffeb3b, #ffc107);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.gold {
+    background: linear-gradient(90deg, #fff8e1, #fcebb4, #ffeb3b, #ffc107);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
