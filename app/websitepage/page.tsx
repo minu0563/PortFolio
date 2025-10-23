@@ -1,7 +1,7 @@
 export default function Home() {
     return (
       <div>
-          <p>webpage!</p>
+          <p>webpagge!</p>
       </div>
     );
   }
