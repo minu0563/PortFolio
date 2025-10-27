@@ -114,7 +114,7 @@ export default function Home() {
           </h4>
         </AnimatedSection>
 
-        <AnimatedSection delay={100}>
+        <AnimatedSection delay={150}>
           <div className='flex flex-row items-center justify-between border-b border-gray-600 pb-10 sm:pr-30 md:pr-40 lg:pr-60 xl:pr-80 sm:pl-30 md:pl-40 lg:pl-60 xl:pl-80 mb-10'>
             <div className='flex flex-col items-center justify-between'>
               <h4 className='sm:mr-3 md:mr-6 lg:mr-10 text-lg mb-3'>
@@ -130,7 +130,7 @@ export default function Home() {
           </div>
         </AnimatedSection>
 
-        <AnimatedSection delay={100}>
+        <AnimatedSection delay={150}>
           <div className='mb-10'>
             <h4 className='mb-8 text-lg'>
               We also have two website ideas in progress,<br /> which will be introduced here on our main page.
@@ -139,7 +139,7 @@ export default function Home() {
           </div>
         </AnimatedSection>
 
-        <AnimatedSection delay={100}>
+        <AnimatedSection delay={150}>
           <div>
             <h4 className='text-lg border-b border-gray-600 pb-10 sm:pr-30 md:pr-50 lg:pr-80 sm:pl-30 md:pl-60 lg:pl-80 mb-10'>
               Stay tuned as we continue to share our work and upcoming projects with you.

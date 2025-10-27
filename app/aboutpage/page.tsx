@@ -1,22 +1,48 @@
 import Link from "next/link";
 import AnimatedSection from '../AnimatedSection';
-
+import '../globals.css';
 
 export default function Home() {
     return (
-        <div className="flex justify-center items-center flex-col">
-            <p>PortFolio</p>
-            <div className="flex justify-center items-center w-full h-screen">
+        <div>
+            <div className="flex flex-col justify-center items-center">
+                <h1 className="text-5xl md:text-5xl lg:text-7xl mt-5 mb-5 gold text-center">
+                    PortFolio
+                </h1>
                 <AnimatedSection>
-                    <Link href="/aboutpage/KwakDoYoung" className="px-6 py-3 rounded-lg border-2 border-gray-400 bg-clip-text text-transparent bg-gradient-to-r from-red-400 to-white font-medium">
-                        Kwak Do Young
-                    </Link>
-                </AnimatedSection>  
-                <AnimatedSection delay={100}>
-                    <Link href="/aboutpage/ParkJuHyun" className="px-6 py-3 rounded-lg border-2 border-gray-400 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-white font-medium">
-                        Park Ju Hyun
-                    </Link>
+                    <p className="text-sm sm:text-xl md:text-2xl lg:text-3xl text-center max-w-3xl px-4">
+                        This is our portfolio page where you can find all our projects and works.
+                    </p>
                 </AnimatedSection>
+                <div className="flex flex-wrap justify-center items-start gap-15 mt-10 w-full px-4">
+                    <AnimatedSection delay={50}>
+                        <div className="flex flex-col justify-center items-center p-5 border-2 border-gray-400 rounded-lg space-y-4 w-64 sm:w-72 md:w-80 lg:w-96">
+                            <svg className="w-full h-auto" viewBox="0 0 400 400">
+                                <image href="/extension.png" width="400" height="400" />
+                            </svg>
+                            <Link
+                                href="/aboutpage/KwakDoYoung"
+                                className="px-4 py-2 rounded-lg border-2 border-gray-400 bg-clip-text text-transparent bg-gradient-to-r from-red-400 to-white font-medium text-center w-full"
+                            >
+                                Kwak Do Young
+                            </Link>
+                        </div>
+                    </AnimatedSection>
+                    <AnimatedSection delay={100}>
+                        <div className="flex flex-col justify-center items-center p-5 border-2 border-gray-400 rounded-lg space-y-4 w-64 sm:w-72 md:w-80 lg:w-96">
+                            <svg className="w-full h-auto" viewBox="0 0 400 400">
+                                <image href="/extension.png" width="400" height="400" />
+                            </svg>
+                            <Link
+                                href="/aboutpage/ParkJuHyun"
+                                className="px-4 py-2 rounded-lg border-2 border-gray-400 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-white font-medium text-center w-full"
+                            >
+                                Park Ju Hyun
+                            </Link>
+                        </div>
+                    </AnimatedSection>
+                </div>
+                <div className="pb-15 border-b-2 border-gray-500 w-2/3 mt-2"></div>
             </div>
         </div>
     );

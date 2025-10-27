@@ -1,5 +1,4 @@
 @import "tailwindcss";
-@tailwind utilities;
 
 /* ===== 텍스트 등장 애니메이션 ===== */
 @keyframes fadeUp {
@@ -132,6 +131,14 @@
 
 .gold {
     background: linear-gradient(90deg, #fff8e1, #fcebb4, #ffeb3b, #ffc107);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.neon-green {
+    background: linear-gradient(90deg, #F0FFF0, #A3FF9B, #39FF14, #7FFF00);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
