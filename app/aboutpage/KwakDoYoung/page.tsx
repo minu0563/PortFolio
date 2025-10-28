@@ -1,27 +1,160 @@
 import AnimatedSection from '../../AnimatedSection';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Home() {
   return (
-    <div>
-      <div className="justify-center items-center text-center mt-1 mb-0">
-        <h1 className="text-transparent bg-clip-text text-4xl font-bold mb-0 bg-gradient-to-br from-blue-700 via-neutral-600 to-indigo-100">Portfolio</h1>
-      </div>
-      <hr />
-      <div className="justify-center items-center text-center">
-        <AnimatedSection delay={100} className='min-h-screen'>
-          <h3 className="mt-5"> Welcome to my portfolio page!</h3>
-          <Image src="/imsiimage.png" alt="" width={600} height={400} className="rounded-full mx-auto mt-5" />
+    <div className="w-full max-w-5xl mx-auto px-4 py-8">
+
+      {/* Hero Section */}
+      <AnimatedSection delay={100} className="text-center py-16 md:py-24">
+        <h1 className="text-4xl md:text-6xl font-bold mb-4">
+          Kwak Do Young
+        </h1>
+        <h2 className="text-2xl md:text-3xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 via-pink-500 to-blue-600 mb-6">
+          Developer Exploring Web Usability & Artificial Intelligence
+        </h2>
+        <p className="text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
+          Passionate about software development and AI, focusing on web usability, real-time processing, and vision-based applications.
+        </p>
+        <div className="flex justify-center gap-4">
+          <Link href="#projects" className="bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:bg-blue-700 transition-colors">
+            View Projects
+          </Link>
+          <Link href="https://github.com/minu0563" target="_blank" rel="noopener noreferrer" className="bg-gray-800 text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:bg-gray-900 transition-colors">
+            Visit GitHub
+          </Link>
+        </div>
+      </AnimatedSection>
+
+      <hr className="my-12 md:my-16" />
+
+      {/* Programming Study Section */}
+      <section id="study" className="py-16">
+        <h2 className="text-3xl font-bold text-center mb-12">
+          Programming Study
+        </h2>
+        <AnimatedSection delay={100} className="bg-gray-900 rounded-lg shadow-xl overflow-hidden border border-gray-200 p-8">
+          <div className='relative w-full h-[400px] mb-6'>
+            <Image src="/kwakp1.png" alt="Baekjoon Online Judge" fill className="object-contain" />
+          </div>
+          <p className="text-white mb-6 text-center">
+            Studied algorithmic problem-solving using <strong>Python</strong> and <strong>C</strong> through <strong>Baekjoon</strong> Online Judge.
+            <br />Solutions and codes are archived on GitHub.
+          </p>
+          <div className="flex justify-center gap-20">
+            <Link href="https://github.com/minu0563/baekjoon" target="_blank" rel="noopener noreferrer" className="bg-gray-800 text-white font-semibold px-6 py-3 rounded-lg hover:bg-gray-900 transition-colors">
+              Github
+            </Link>
+            <Link href="https://solved.ac/profile/minu080908" target="_blank" rel="noopener noreferrer" className="bg-green-500 text-white font-semibold px-6 py-3 rounded-lg hover:bg-green-600 transition-colors">
+              Solved.ac
+            </Link>
+          </div>
         </AnimatedSection>
-        <AnimatedSection delay={100} className='min-h-screen'>
-          <h2 className="mt-5"> This website wan created together with a friend.</h2>
-          <Image src="/imsiimage.png" alt="" width={600} height={400} className="rounded-full mx-auto mt-5" />
+      </section>
+
+      <hr className="my-12 md:my-16" />
+
+      {/* Projects Section */}
+      <section id="projects" className="py-16">
+        <h2 className="text-3xl font-bold text-center mb-12">
+          Projects
+        </h2>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+
+          {/* Project 1 */}
+          <AnimatedSection delay={200} className="bg-gray-900 rounded-lg shadow-xl overflow-hidden border border-gray-200">
+            <div className='relative w-full h-[300px] '>
+              <Image src="/kwakp2.png" alt="project1" fill className="object-contain pr-5 pl-5" />
+            </div>
+            <div className="p-6 text-white">
+              <h3 className="text-2xl font-bold mb-3">YouTube Convenience Extension</h3>
+              <p className="text-white mb-4">
+                Developed a Chrome extension to improve the YouTube viewing experience by solving daily inconveniences.
+                Reached over <strong>3,000 visitors</strong> and <strong>200 active users</strong>.
+              </p>
+              <ul className="list-disc list-inside mb-6 text-white">
+                <li>Auto-adjusts video quality</li>
+                <li>One-click Picture-in-Picture (PIP) mode</li>
+                <li>Auto-skip for YouTube Shorts ads</li>
+              </ul>
+              <p>Tech Stack:</p>
+              <ul className="list-disc list-inside mb-6 text-white">
+                <li>html, css, js</li>
+              </ul>
+              <div className="flex gap-4">
+                <Link href="YOUR_CHROME_STORE_LINK" target="_blank" rel="noopener noreferrer" className="bg-blue-600 text-white px-4 py-2 rounded-md font-semibold hover:bg-blue-700">
+                  Web Store
+                </Link>
+                <Link href="YOUR_GITHUB_REPO_LINK" target="_blank" rel="noopener noreferrer" className="bg-gray-800 text-white px-4 py-2 rounded-md font-semibold hover:bg-gray-900">
+                  GitHub
+                </Link>
+              </div>
+            </div>
+          </AnimatedSection>
+
+          {/* Project 2 */}
+          <AnimatedSection delay={300} className="bg-white rounded-lg shadow-xl overflow-hidden border border-gray-200">
+            <Image src="/images/translation-app.png" alt="Real-time Translation Project" width={600} height={400} className="w-full object-cover" />
+            <div className="p-6">
+              <h3 className="text-2xl font-bold mb-3 text-gray-600">Real-Time Translation Application</h3>
+              <p className="text-gray-700 mb-4">
+                Developed during an AI hackathon — a program that translates spoken language into Korean in real time.
+                Built using <strong>Python</strong>, <strong>OpenCV</strong>, <strong>MediaPipe</strong>, and <strong>SpeechRecognition</strong>.
+              </p>
+              <div className="flex gap-4">
+                <Link href="YOUR_GITHUB_REPO_LINK_2" target="_blank" rel="noopener noreferrer" className="bg-gray-300 text-gray-800 px-4 py-2 rounded-md font-semibold hover:bg-gray-400">
+                  GitHub
+                </Link>
+              </div>
+            </div>
+          </AnimatedSection>
+
+        </div>
+      </section>
+
+      <hr className="my-12 md:my-16" />
+
+      {/* Awards Section */}
+      <section id="awards" className="py-16">
+        <h2 className="text-3xl font-bold text-center mb-12">Awards</h2>
+        <AnimatedSection delay={100} className="bg-white rounded-lg shadow-xl overflow-hidden border border-gray-200 p-8">
+          <p className="text-gray-700 mb-4">
+            <strong>Winner of the 2nd Naver OGQ Competition</strong> — achieved top results in the Image Super-Resolution (SR) challenge using AI-based models.
+          </p>
+          <div className="flex justify-center">
+            <Link href="YOUR_AWARD_CODE_LINK" target="_blank" rel="noopener noreferrer" className="bg-gray-800 text-white font-semibold px-6 py-3 rounded-lg hover:bg-gray-900 transition-colors">
+              View Competition Code
+            </Link>
+          </div>
         </AnimatedSection>
-        <AnimatedSection delay={100} className='min-h-screen'>
-          <h2 className="mt-5"> I`ve worked on developing several <strong>extensions</strong> and <strong>websites</strong>, which you can explore here. </h2>
-          <Image src="/imsiimage.png" alt="" width={600} height={400} className="rounded-full mx-auto mt-5" />
-        </AnimatedSection>
-      </div>
+      </section>
+
+      <hr className="my-12 md:my-16" />
+
+      {/* Paper Reviews Section */}
+      <section id="research" className="py-16">
+        <h2 className="text-3xl font-bold text-center mb-12">Paper Reviews</h2>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+
+          <AnimatedSection delay={200} className="bg-white rounded-lg shadow-xl overflow-hidden border border-gray-200 p-6">
+            <h3 className="text-2xl font-bold mb-3 text-gray-600">SRCNN Paper Review</h3>
+            <p className="text-gray-700">
+              Studied and analyzed the SRCNN paper focusing on deep learning-based image super-resolution.
+            </p>
+          </AnimatedSection>
+
+          <AnimatedSection delay={300} className="bg-white rounded-lg shadow-xl overflow-hidden border border-gray-200 p-6">
+            <h3 className="text-2xl font-bold mb-3 text-gray-600">ViT (Vision Transformer) Paper Review</h3>
+            <p className="text-gray-700">
+              Reviewed the Vision Transformer architecture to understand transformer-based vision representation and model optimization.
+            </p>
+          </AnimatedSection>
+
+        </div>
+      </section>
     </div>
   );
 }
