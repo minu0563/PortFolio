@@ -13,7 +13,7 @@ export default function Home() {
                 <h2 className="text-2xl md:text-3xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 via-pink-500 to-blue-600 mb-6">
                     Developer Exploring Web Usability & Artificial Intelligence
                 </h2>
-                <p className="text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
+                <p className="text-lg text-[#3b82f6] mb-8 max-w-2xl mx-auto">
                     From developing browser extensions that improve user experience
                     to exploring AI models,
                     I am tackling a diverse spectrum of technologies.
@@ -43,42 +43,49 @@ export default function Home() {
                             <Image src="/parkp1.png" alt="CoCoNuT Project" fill className="object-contain pl-5 pr-5" />
                         </div>
                         <div className="p-6">
-                            <h3 className="text-2xl font-bold mb-3 text-white">CoCoNuT: YouTube Convenience Tools</h3>
-                            <p className="text-gray-700 mb-4">
-                                a Chrome extension for a more convenient YouTube viewing experience.
+                            <h3 className="text-2xl font-bold mb-3 text-gray-950">CoCoNuT: YouTube Convenience Tools</h3>
+                            <p className="text-gray-950 mb-4">
+                                A Chrome extension for a more convenient YouTube viewing experience.
                             </p>
-                            <ul className="list-disc list-inside text-gray-600 mb-6">
+                            <ul className="list-disc list-inside text-gray-950 mb-6">
                                 <li>Auto-set preferred video quality</li>
                                 <li>Easy PIP (Picture-in-Picture) mode activation</li>
                                 <li>Automatic ad skipping in shorts</li>
                             </ul>
-                            <p>Tech Stack:</p>
-                            <ul className="list-disc list-inside mb-6 text-white">
+                            <p className="text-gray-950">Tech Stack:</p>
+                            <ul className="list-disc list-inside mb-6 text-gray-950">
                               <li>html, css, js</li>
                             </ul>
                             <div className="flex gap-4">
-                                <Link href="https://chromewebstore.google.com/detail/coconut-%EB%8B%B9%EC%8B%A0%EC%9D%98-%ED%8E%B8%EB%A6%AC%ED%95%9C-%EC%9C%A0%ED%8A%9C%EB%B8%8C-%EC%8B%9C%EC%B2%AD%EC%9D%84-%EC%9C%84/ckdkiedamneebnodcphbohikgccaheon?hl=ko&utm_source=ext_sidebar" target="_blank" rel="noopener noreferrer" className="bg-red-600 text-white px-4 py-2 rounded-md font-semibold hover:bg-red-700">
+                                <Link href="https://chromewebstore.google.com/detail/coconut-%EB%8B%B9%EC%8B%A0%EC%9D%98-%ED%8E%B8%EB%A6%AC%ED%95%9C-%EC%9C%A0%ED%8A%9C%EB%B8%8C-%EC%8B%9C%EC%B2%AD%EC%9D%84-%EC%9C%84/ckdkiedamneebnodcphbohikgccaheon?hl=ko&utm_source=ext_sidebar"
+                                target="_blank" rel="noopener noreferrer" className="
+                                bg-linear-to-tr from-[#ffffff0] via-[#00ffff] to-[#0000cd] text-gray-950 px-4 py-2 rounded-md font-semibold hover:bg-red-700">
                                     Web Store
                                 </Link>
                             </div>
                         </div>
                     </AnimatedSection>
 
-                    <AnimatedSection delay={300} className="bg-[#fff0f5] rounded-lg shadow-xl overflow-hidden border border-gray-200">
+                    <AnimatedSection delay={300} className="
+                    bg-linear-to-tr from-[#00ffff] via-[#4169e1] to-[#191970] rounded-lg shadow-xl overflow-hidden border border-gray-200">
                         <Image src="/images/streamer-screenshot.png" alt="Streamer Project" width={600} height={400} className="w-full object-cover" />
                         <div className="p-6 mt-8">
-                            <h3 className="text-2xl font-bold mb-3 text-gray-600">Streaming Status Notifier</h3>
+                            <h3 className="text-2xl font-bold mb-3 text-[#ff00ff]">Streaming Status Notifier</h3>
                             <p className="text-[#ba55d3] mb-4">
                                 An extension to check the live status of followed streamers in real-time.
                             </p>
-                            <ul className="list-disc list-inside text-gray-600 mb-6">
+                            <ul className="list-disc list-inside text-[#ff00ff] mb-6">
                                 <li>Provides a real-time list of live statuses</li>
                                 <li>Displays detailed info (viewers, category, etc.)</li>
                                 <li>Direct link to the broadcast page</li>
                             </ul>
+                            <p className="text-[#ff00ff]">Tech Stack:</p>
+                            <ul className="list-disc list-inside mb-6 text-[#ff00ff]">
+                              <li>html, css, js</li>
+                            </ul>
                             <div className="flex gap-4">
-                                <Link href="YOUR_GITHUB_REPO_LINK_2" target="_blank" 
-                                rel="noopener noreferrer" className="bg-[#777777] text-gray-800 px-4 py-2 rounded-md font-semibold hover:bg-gray-400">
+                                <Link href="/githubiscomingsoon" target="_blank" 
+                                rel="noopener noreferrer" className="bg-linear-to-tr from-[#ffffff0] via-[#00ffff] to-[#0000cd] text-gray-800 px-4 py-2 rounded-md font-semibold hover:bg-gray-400">
                                     GitHub
                                 </Link>
                             </div>
@@ -93,7 +100,8 @@ export default function Home() {
                 <h2 className="text-3xl font-bold text-center mb-12">
                     Research & Study
                 </h2>
-                <AnimatedSection delay={100} className="bg-white rounded-lg shadow-xl overflow-hidden border border-gray-200 p-6 md:p-8">
+                <AnimatedSection delay={100} className="bg-gray-800 rounded-lg shadow-xl border-t-4 border-blue-500
+                 rounded-lg shadow-xl overflow-hidden border border-gray-200 p-6 md:p-8">
                     <div className="flex flex-col md:flex-row items-center gap-8">
                         <div className="flex-1">
                             <h3 className="text-2xl font-bold mb-3 text-gray-600">AI Paper Study: YOLOv12 </h3>
