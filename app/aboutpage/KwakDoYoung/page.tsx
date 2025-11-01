@@ -110,8 +110,8 @@ export default function Home() {
               <ul className="list-disc list-inside mb-6 text-white">
                 <li>Python</li>
                 <li>OpenCV</li>
-                <li>MediaPipe</li>
-                <li>SpeechRecognition</li>
+                <li>EDSR</li>
+                <li>Computer Vision</li>
               </ul>
               <div className="flex gap-4">
                 <Link href="/githubiscomingsoon" target="_blank" rel="noopener noreferrer" className="bg-gray-800 text-white px-4 py-2 rounded-md font-semibold hover:bg-gray-900">
