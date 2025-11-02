@@ -104,12 +104,11 @@ export default function Home() {
               <h3 className="text-2xl font-bold mb-3 text-white">Real-Time Translation Application</h3>
               <p className="text-white mb-4">
                 Developed during an AI hackathon — a program that translates spoken language into Korean in real time. <br />
-                Built using <strong>Python</strong>, <strong>OpenCV</strong>, <strong>MediaPipe</strong>, and <strong>SpeechRecognition</strong>.
+                Built using <strong>Pytorch</strong>, <strong>OpenCV</strong>.
               </p>
               <p>Tech Stack:</p>
               <ul className="list-disc list-inside mb-6 text-white">
-                <li>Python</li>
-                <li>OpenCV</li>
+                <li>Pytorch</li>
                 <li>EDSR</li>
                 <li>Computer Vision</li>
               </ul>
