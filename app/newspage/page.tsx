@@ -1,7 +1,7 @@
 export default function Home() {
     return (
       <div>
-          <p>newspage!</p>
+          <p>news page!</p>
       </div>
     );
   }
