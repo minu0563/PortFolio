@@ -1,7 +1,7 @@
 export default function Home() {
     return (
       <div>
-          <p>extensionpage!</p>
+          <p>extension page!</p>
       </div>
     );
   }
