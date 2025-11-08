@@ -88,6 +88,9 @@ export default function Home() {
                   target="_blank" rel="noopener noreferrer" className="bg-blue-600 text-white px-4 py-2 rounded-md font-semibold hover:bg-blue-700">
                   Web Store
                 </Link>
+                <Link href="/extensionpage" className="bg-white text-black px-4 py-2 rounded-md font-semibold hover:bg-gray-200">
+                  extension
+                </Link>
                 <Link href="/githubiscomingsoon" target="_blank" rel="noopener noreferrer" className="bg-gray-800 text-white px-4 py-2 rounded-md font-semibold hover:bg-gray-900">
                   GitHub
                 </Link>
