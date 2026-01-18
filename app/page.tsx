@@ -80,9 +80,13 @@ export default function Home() {
   return (
     <div>
       <div
-        className={`pt-60 pb-70 ${bgAnimClass}`}
-        style={{ '--bg-color': bgColor } as React.CSSProperties}
+        className={`pt-60 pb-70 ${bgAnimClass} w-full`}
+        style={{
+          '--bg-color': bgColor,
+          height: 'min(80vw, 90vh)',
+        } as React.CSSProperties}
       >
+
         <div className="flex justify-center items-start">
           <p className="text-7xl sm:text-7xl md:text-8xl lg:text-9xl font-bold font-geist animate-fadeUp">
             CoCoNuT
