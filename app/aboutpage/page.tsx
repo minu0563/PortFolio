@@ -13,9 +13,9 @@ export default function Home() {
       <h1
         className={`text-5xl md:text-5xl lg:text-7xl mt-5 mb-5 text-center transition-all duration-500 
           ${hovered === 1 
-            ? "bg-clip-text text-transparent bg-gradient-to-r from-red-400 to-white" 
+            ? "bg-clip-text text-transparent bg-gradient-to-r from-white to-red-400" 
             : hovered === 2 
-              ? "bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-white" 
+              ? "bg-clip-text text-transparent bg-gradient-to-r from-white to-blue-400" 
               : "gold"}`}
       >
         PortFolio
@@ -71,7 +71,12 @@ export default function Home() {
         </AnimatedSection>
       </div>
 
-      <div className="pb-15 border-b-2 border-gray-500 w-2/3 mt-2"></div>
+      <div className="pb-15 border-b-2 border-gray-500 w-2/3 mt-2 mb-10"></div>
+
+      <div className="flex flex-col justify-center items-center text-gray-500">
+        <p>Our team, CoCoNuT, consists of two members, Kwak Do Young and Park Ju Hyun, who collaborate on projects together.</p>
+        <p>This page serves as a portfolio where each member documents their coding experiences and the parts of the project they were responsible for.</p>
+      </div>
     </div>
   );
 }
