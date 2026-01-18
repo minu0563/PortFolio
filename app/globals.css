@@ -144,3 +144,24 @@
     background-clip: text;
     color: transparent;
 }
+
+.color-change {
+  display: inline-block;
+
+  background: linear-gradient(
+    90deg,
+    #ffffff 0%,
+    #fcebb4 20%,
+    #ffc107 55%,
+    #ffffff 100%
+  );
+  background-size: 200% 100%;
+  background-position: 100% 0%;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+
+  transition: background-position 1.5s linear, -webkit-text-fill-color 1s ease;
+}
