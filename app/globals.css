@@ -105,11 +105,11 @@
   font-family: 'Bebas Neue', sans-serif;
 }
 
-.texthovercolor h4 {
+.texthovercolor {
   transition: all 0.5s ease-out;
 }
 
-.texthovercolor h4:hover {
+.texthovercolor:hover {
   background: linear-gradient(90deg, #fff8e1, #ffeb3b, #ffc107);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -143,4 +143,27 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
     color: transparent;
+}
+
+.color-change {
+  background: linear-gradient(90deg,    
+    #ffffff 0%,
+    #fcebb4 20%,
+    #ffc107 45%,
+    #ffffff 100%);
+  background-size: 200% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes slide-gradient {
+  0% { background-position: 100% 0; }
+  100% { background-position: 0% 0; }
+}
+
+.color-white {
+  color: #fff !important;
+  -webkit-text-fill-color: #fff !important;
 }
