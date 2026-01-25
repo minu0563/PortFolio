@@ -135,6 +135,7 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
     color: transparent;
+    filter: drop-shadow(0 0 1px #1c1a1a);
 }
 
 .neon-green {
@@ -166,4 +167,22 @@
 .color-white {
   color: #fff !important;
   -webkit-text-fill-color: #fff !important;
+}
+
+.theme-dark {
+  background-color: #1c1a1a;
+  color: white;
+}
+
+.theme-light {
+  background-color: #f8f6f0;
+  color: #1c1a1a;
+}
+
+body {
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.shadow {
+  filter: drop-shadow(0 0 0.5px #1c1a1a);
 }
