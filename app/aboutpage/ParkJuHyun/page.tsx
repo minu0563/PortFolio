@@ -1,4 +1,4 @@
-import AnimatedSection from '../../AnimatedSection';
+import AnimatedSection from '../../components/animation/AnimatedSection';
 import Image from 'next/image';
 import Link from 'next/link'; 
 

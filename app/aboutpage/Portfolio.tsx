@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import AnimatedSection from "../AnimatedSection";
+import AnimatedSection from "../components/animation/AnimatedSection";
 import '../globals.css';
 import Image from "next/image";
 
@@ -15,9 +15,9 @@ export default function Portfolio() {
         className={`text-5xl lg:text-7xl mt-5 mb-5 text-center transition-all duration-500 
           ${
             hovered === 1
-              ? 'bg-clip-text text-transparent bg-gradient-to-r from-white to-red-400'
+              ? 'neon-red'
               : hovered === 2
-              ? 'bg-clip-text text-transparent bg-gradient-to-r from-white to-blue-400'
+              ? 'neon-blue'
               : 'gold'
           }`}
       >

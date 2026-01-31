@@ -1,12 +1,15 @@
+'use client';
+
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Children } from "react";
 import Link from "next/link";
-import ColorChange from "./ColorChange";
-import ThemeLint from "./themelint";
+import ColorChange from "./components/animation/ColorChange";
+import ThemeLint from "./components/theme/themelint";
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+
   return (
     <html lang="en" suppressHydrationWarning>
       <head>

@@ -138,6 +138,24 @@
     filter: drop-shadow(0 0 1px #1c1a1a);
 }
 
+.neon-red {
+    background: linear-gradient(90deg, #ffffff, #f87171);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    filter: drop-shadow(0 0 0.5px #1c1a1a);
+}
+
+.neon-blue {
+    background: linear-gradient(90deg, #ffffff, #60a5fa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    filter: drop-shadow(0 0 0.5px #1c1a1a);
+}
+
 .neon-green {
     background: linear-gradient(90deg, #F0FFF0, #A3FF9B, #39FF14, #7FFF00);
     -webkit-background-clip: text;
