@@ -18,21 +18,24 @@ export default function AboutPage() {
   if (!mounted) return null; 
 
   return (
-    <div className="relative w-full h-[calc(100vh-120px)] overflow-hidden">
-      <div
-        className="flex h-full transition-transform duration-700 ease-in-out"
-        style={{ transform: `translateX(-${page * 100}%)` }}
-      >
-        <section className="w-full h-full shrink-0">
-          <Portfolio />
-        </section>
+      <div className="relative w-full min-h-[calc(100vh-120px)] overflow-x-hidden overflow-y-auto">
+        <div
+          className="flex transition-transform duration-700 ease-in-out"
+          style={{ transform: `translateX(-${page * 100}%)` }}
+        >
+          <section className="w-full shrink-0 min-h-[calc(100vh-120px)] flex flex-col">
+            <Portfolio />
+          </section>
 
-        <section className="w-full h-full shrink-0">
-          <Settings />
-        </section>
+          <section className="w-full shrink-0 min-h-[calc(100vh-120px)] flex flex-col">
+            <Settings />
+          </section>
+        </div>
+
+        <div className="absolute bottom-2 right-2 sm:bottom-4 sm:right-8">
+          <SlideNav page={page} setPage={setPage} />
+        </div>
       </div>
 
-      <SlideNav page={page} setPage={setPage} />
-    </div>
   );
 }
