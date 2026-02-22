@@ -7,9 +7,10 @@ interface AnimatedSectionProps {
   delay?: number;
   anitype?: number;
   threshold?: number;
+  onComplete?: () => void;
 }
 
-const AnimatedSection: React.FC<AnimatedSectionProps> = ({ children, className = "", delay = 0, anitype = 0, threshold = 0.3 }) => {
+const AnimatedSection: React.FC<AnimatedSectionProps> = ({ children, className = "", delay = 0, anitype = 0, threshold = 0.3, onComplete}) => {
   const ref = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(false);
 
@@ -17,7 +18,10 @@ const AnimatedSection: React.FC<AnimatedSectionProps> = ({ children, className =
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          setTimeout(() => setIsVisible(true), delay);
+          setTimeout(() => {
+            setIsVisible(true);
+            if (onComplete) onComplete();
+        }, delay);
           observer.unobserve(entry.target);
         }
       },
@@ -29,7 +33,7 @@ const AnimatedSection: React.FC<AnimatedSectionProps> = ({ children, className =
     return () => {
       if (ref.current) observer.unobserve(ref.current);
     };
-  }, [delay]);
+  }, [delay, onComplete]);
 
   let animate = '';
 
