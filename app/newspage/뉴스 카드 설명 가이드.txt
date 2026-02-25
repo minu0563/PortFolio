@@ -1,0 +1,8 @@
+update 관련
+    - Update + v + num(ex. 1.0.1)
+
+released 관련
+    - Released + 프로젝트 (ex. extension, web 등등..) + v + num(ex. 1.0.0)
+
+other 관련
+    - (짧은 설명)
