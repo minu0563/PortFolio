@@ -40,11 +40,13 @@ export default function Home() {
 
   return (
     <div>
-      {/*Banner*/}
-      <Banner boxes={boxes} bgColors={bgColors} />
+      {/*배너임*/}
+      <section>
+        <Banner boxes={boxes} bgColors={bgColors} />
+      </section>
 
       <div className="mt-12 flex flex-col justify-center items-center text-center">
-        {/*소개*/}
+        {/*페이지 소개*/}
         <section>
           <AnimatedSection>
             <p className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-medium mt-20 gold">
@@ -71,8 +73,8 @@ export default function Home() {
             </div>
           </AnimatedSection>
 
-          <div className='flex [&_h4]:text-2xl mb-10 gap-x-40 mb-5 sm:px-20 md:px-30 lg:px-40 xl:px-50'>
-            <div>
+          <div className='flex flex-col md:flex-row [&_h4]:text-2xl mb-10 gap-x-5 lg:gap-x-20 2xl:gap-x-40 px-30 sm:px-50 md:px-30 lg:px-40 xl:px-50'>
+            <div className='mb-10 border-b-gray-400 border-b pb-3 md:mb-0 md:border-b-0 md:pb-0'>
               <AnimatedSection anitype={1} delay={1000}>
                 <h4>
                   Kwawk Do Young
@@ -87,7 +89,7 @@ export default function Home() {
               </AnimatedSection>
             </div>
 
-            <div>
+            <div className='mb-10 border-b-gray-400 border-b pb-3 md:mb-0 md:border-b-0 md:pb-0'>
               <AnimatedSection anitype={1} delay={1200}>
                 <h4>
                   Park Ju Hyun
@@ -100,7 +102,7 @@ export default function Home() {
               </AnimatedSection>
             </div>
 
-            <div>
+            <div className='border-b-gray-400 border-b pb-3 md:mb-0 md:border-b-0 md:pb-0'>
               <AnimatedSection anitype={1} delay={1400}>
                 <h4>
                   Cho Seung hyun
@@ -115,26 +117,31 @@ export default function Home() {
           </div>
         </section>
 
+        {/* 이거 팀원 소개 다 나오고 나면 그때 나올꺼임 */}
         {membersLoaded && (
           <div>
-            <AnimatedSection delay={500}>
-              <div className="flex flex-row items-center justify-between border-b border-gray-600 pb-10 sm:px-30 md:px-40 lg:px-60 xl:px-70 mb-10">
-                <div className="flex flex-col items-center justify-between">
-                  <h4 className="sm:mr-3 md:mr-6 lg:mr-10 text-lg mb-3">
-                    So far, we have released one extension <br />
-                    and are preparing to launch another soon.
-                  </h4>
-                  <Link href="/extensionpage">
-                    <h4 className="text-lg cursor-pointer gold sm:mr-3 md:mr-6 lg:mr-10">
-                      <ColorChange duration={1000} animate={true}>
-                        Go to extension page
-                      </ColorChange>
+            
+            {/* extension 소개 페이지 설명 */}
+            <section>
+              <AnimatedSection delay={500}>
+                <div className="flex flex-col 2xl:flex-row items-center justify-between border-b border-gray-600 pb-10 sm:px-30 md:px-40 lg:px-50 2xl:px-70 mb-10">
+                  <div className="flex flex-col items-center justify-between">
+                    <h4 className="sm:mr-3 md:mr-6 lg:mr-10 text-lg mb-3">
+                      So far, we have released one extension <br />
+                      and are preparing to launch another soon.
                     </h4>
-                  </Link>
+                    <Link href="/extensionpage">
+                      <h4 className="text-lg cursor-pointer gold sm:mr-3 md:mr-6 lg:mr-10">
+                        <ColorChange duration={1000} animate={true}>
+                          Go to extension page
+                        </ColorChange>
+                      </h4>
+                    </Link>
+                  </div>
+                  <Image src="/window.svg" alt="This is our extension" width={300} height={140} />
                 </div>
-                <Image src="/extension1b.png" alt="This is our extension" width={300} height={140} />
-              </div>
-            </AnimatedSection>
+              </AnimatedSection>
+            </section>
 
             <AnimatedSection delay={550}>
               <div className="mb-10">
@@ -143,7 +150,7 @@ export default function Home() {
                   <br />
                   which will be introduced here on our main page.
                 </h4>
-                <Image src="/webpage1.png" alt="This is our first web idea" width={1200} height={480} />
+                <Image src="window.svg" alt="This is our first web idea" width={1200} height={480} />
               </div>
             </AnimatedSection>
 
