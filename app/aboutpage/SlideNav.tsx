@@ -7,9 +7,10 @@ import AnimatedSection from "../components/animation/AnimatedSection";
 interface Props {
   page: number;
   setPage: (v: number) => void;
+  className: string;
 }
 
-export default function SlideNav({ page, setPage }: Props) {
+export default function SlideNav({ page, setPage, className = "" }: Props) {
   const { theme } = useTheme();
 
   const ONBC =
@@ -23,7 +24,7 @@ export default function SlideNav({ page, setPage }: Props) {
       : 'border-gray-400 text-gray-400';
 
   return (
-    <div className="absolute bottom-1 right-8 flex gap-4">
+    <div className={`absolute bottom-1 right-8 flex gap-4 ${className}`}>
       <AnimatedSection anitype={1} delay={1000}>
         <button
           onClick={() => setPage(0)}
