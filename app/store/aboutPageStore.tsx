@@ -16,7 +16,7 @@ const getInitialPage = (): number => {
 export const useAboutPageStore = create<AboutPageState>((set) => ({
   page: getInitialPage(),
   setPage: (v) => {
-    set({ page: v });
+    set({ page: v });``
     if (typeof window !== "undefined") {
       localStorage.setItem("aboutpage", String(v));
     }
