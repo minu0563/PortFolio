@@ -138,7 +138,9 @@ export default function Home() {
                       </h4>
                     </Link>
                   </div>
-                  <Image src="/window.svg" alt="This is our extension" width={300} height={140} />
+                  <div className='mt-10 2xl:mt-0'>
+                    <Image src="/extension1w.png" alt="This is our extension" width={300} height={140} />
+                  </div>
                 </div>
               </AnimatedSection>
             </section>
@@ -150,7 +152,7 @@ export default function Home() {
                   <br />
                   which will be introduced here on our main page.
                 </h4>
-                <Image src="window.svg" alt="This is our first web idea" width={1200} height={480} />
+                <Image src="/webpage1.png" alt="This is our first web idea" width={1200} height={480} />
               </div>
             </AnimatedSection>
 
