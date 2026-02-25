@@ -73,7 +73,7 @@ export default function Banner({ boxes, bgColors }: BannerProps) {
 
       <div className="flex animate-fadeup-3">
         <Image src="/ARROW-L.png" alt="" width={40} height={40} className="ml-5 cursor-pointer" onClick={prevBox} />
-        <Image src="/ARROW-R.png" alt="" width={40} height={40} className="ml-auto mr-5 cursor-pointer" onClick={nextBox}/>
+        <Image src="/ARROW-R.png" alt="" width={40} height={40} className="ml-auto mr-5 cursor-pointer" onClick={nextBox} />
       </div>
 
       <div className="flex flex-col justify-center items-center text-center">

@@ -1,3 +1,4 @@
+// useTheme.tsx
 'use client';
 
 import { useEffect, useState } from "react";
@@ -27,9 +28,6 @@ export const useTheme = () => {
       setThemeState(newTheme);
       document.documentElement.classList.remove('theme-dark', 'theme-light'); 
       document.documentElement.classList.add(newTheme); 
-      if (newTheme !== theme) {
-        window.location.reload();
-      }
     }
   };
 

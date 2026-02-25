@@ -1,3 +1,4 @@
+// themelint.tsx
 'use client';
 
 // 테마 적용

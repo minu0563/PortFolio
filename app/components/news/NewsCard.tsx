@@ -4,6 +4,7 @@ import { NewsItem } from "@/app/data/newsData/newsData";
 import { getTheme } from "../theme/useTheme";
 import { useState, useEffect } from "react";
 import StatusColor from "../status/page";
+import { it } from "node:test";
 
 interface NewsCardProps {
     item: NewsItem;
@@ -36,11 +37,11 @@ const NewsCard: React.FC<NewsCardProps> = ({ item, isHovered, isOtherHovered, on
                 ${isHovered ? 'scale-101 z-10' : ''}
                 ${isOtherHovered ? 'scale-99 blur-sm' : ''}
             `}
-        >
+        >   
             <img
                 src={item.image}
                 alt={item.title}
-                className="w-24 h-24 sm:w-32 sm:h-32 lg:w-64 lg:h-32 object-cover"
+                className="hidden sm:block w-64 h-32 object-cover"
             />
             <div className="p-4 flex flex-col justify-center gap-y-4">
                 <h3 className="text-lg sm:text-xl font-semibold mt-5 gold">{item.title}</h3>
@@ -50,6 +51,7 @@ const NewsCard: React.FC<NewsCardProps> = ({ item, isHovered, isOtherHovered, on
                 <StatusColor>
                     {item.tag}
                 </StatusColor>
+                <p className="mt-3 mr-1 text-[14px] text-gray-600">{item.date}</p>
             </div>
         </div>
     );
