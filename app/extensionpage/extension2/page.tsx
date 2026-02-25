@@ -93,18 +93,11 @@ export default function ExtensionPage() {
           </h2>
         </AnimatedSection>
 
-        <AnimatedSection delay={150} className='flex flex-row justify-center gap-10'>
+        <AnimatedSection delay={150}>
           <Image
-            src="/extension2.png"
+            src="/extension-settings.png"
             alt="Extension settings preview"
-            width={300}
-            height={420}
-            className="border border-gray-600"
-          />
-          <Image
-            src="/extension2p.png"
-            alt="Extension settings preview"
-            width={300}
+            width={700}
             height={420}
             className="border border-gray-600"
           />
@@ -118,7 +111,7 @@ export default function ExtensionPage() {
       </section>
 
       {/* ================= How it works ================= */}
-      <section className="relative w-full max-w-5xl mx-auto mb-32 max-w-3xl">
+      <section className="relative w-full max-w-5xl mx-auto mb-32">
         <AnimatedSection>
           <h2 className="text-4xl mb-12">
             How it works
@@ -170,7 +163,7 @@ export default function ExtensionPage() {
       </section>
 
       {/* ================= Install ================= */}
-      <section id="install" className="mb-40">
+      <section id="install" className="mb-10 relative border-b border-gray-600 pb-25 sm:px-30 md:px-45 lg:px-80 ">
         <AnimatedSection>
           <h2 className="text-4xl mb-8">
             Ready to try it?
@@ -188,6 +181,27 @@ export default function ExtensionPage() {
         </AnimatedSection>
       </section>
 
+      <AnimatedSection delay={350}>
+        <div className="flex sm:flex-row justify-between gap-10 sm:gap-50 lg:gap-120 text-sm sm:text-base mb-20">
+          <Link
+            href="/extensionpage"
+            className="gold hover:opacity-70 transition"
+          >
+            ← Back to extensionpage
+          </Link>
+
+          <Link
+            href="#"
+            onClick={(e) =>{
+              e.preventDefault();
+              alert("This is last extension");
+            }}
+            className="text-gray-400 hover:text-white transition"
+          >
+            Go next extension →
+          </Link>
+        </div>
+      </AnimatedSection>
     </div>
   );
 }
