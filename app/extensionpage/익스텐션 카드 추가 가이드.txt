@@ -1,0 +1,18 @@
+extension = [ 안에 다음 형식을 따라 작성하기]
+
+slug -> extension (번호)
+name -> extension 이름
+desc -> extension 설명 (" 이 안에 작성 ")
+status 
+    - 등록 시 Released
+    - 그외 Other
+
+-------------------------------------------------------------
+
+익스텐션 설명 페이지 생성
+
+1. 폴더 생성 (이름은 slug 명을 따라간다)
+2. 기존 익스텐션 설명용 페이지와 동일한 템플릿으로 생성
+3. FAQ 작성 
+        - data/FAQData 안에 slug 번호에 맞는 FAQData (num) 을 생성
+        - 기존 파일속 템플릿에 맞게 작성
