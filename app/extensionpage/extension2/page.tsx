@@ -93,15 +93,27 @@ export default function ExtensionPage() {
           </h2>
         </AnimatedSection>
 
-        <AnimatedSection delay={150}>
-          <Image
-            src="/extension-settings.png"
-            alt="Extension settings preview"
-            width={700}
-            height={420}
-            className="border border-gray-600"
-          />
-        </AnimatedSection>
+        <div className="flex flex-col items-center gap-y-20 md:flex-row md:gap-12">
+          <AnimatedSection delay={150}>
+            <Image
+              src="/extension2.png"
+              alt="Extension settings preview"
+              width={300}
+              height={420}
+              className="border border-gray-600"
+            />
+          </AnimatedSection>
+
+          <AnimatedSection delay={250}>
+            <Image
+              src="/extension2p.png"
+              alt="Extension settings preview"
+              width={300}
+              height={420}
+              className="border border-gray-600"
+            />
+          </AnimatedSection>
+        </div>
 
         <AnimatedSection delay={300}>
           <p className="mt-6 text-gray-400">
