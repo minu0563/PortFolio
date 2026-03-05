@@ -145,26 +145,65 @@ export default function Home() {
               </AnimatedSection>
             </section>
 
-            <AnimatedSection delay={550}>
-              <div className="mb-10">
-                <h4 className="mb-8 text-lg">
-                  We also have two website ideas in progress,
-                  <br />
-                  which will be introduced here on our main page.
-                </h4>
-                <Image src="/webpage1.png" alt="This is our first web idea" width={1200} height={480} />
-              </div>
-            </AnimatedSection>
+            {/* website 소개 페이지 설명 */}
+            <section>
+              <AnimatedSection delay={350}>
+                <div className="mb-10 border-b border-gray-600 pb-10">
+                  <h4 className="mb-8 text-lg">
+                    We also have two website ideas in progress,
+                    <br />
+                    which will be introduced here on our main page.
+                  </h4>
+                  
+                  <Link href="/websitepage">
+                      <h4 className="text-lg cursor-pointer gold mb-10">
+                        <ColorChange duration={1000} animate={true}>
+                          Go to website page
+                        </ColorChange>
+                      </h4>
+                  </Link>
 
-            <AnimatedSection delay={550}>
-              <div>
-                <h4 className="text-lg border-b border-gray-600 pb-10 sm:pr-30 md:pr-50 lg:pr-80 sm:pl-30 md:pl-60 lg:pl-80 mb-10">
-                  Stay tuned as we continue to share our work and upcoming projects with you.
-                </h4>
-              </div>
-            </AnimatedSection>
+                  <div className="flex items-center justify-center">
+                    <Image src="/webpage1.png" alt="This is our first web idea" width={1200} height={480} />
+                  </div>
+                </div>
+              </AnimatedSection>
+            </section>
+
+            {/* news 소개 페이지 설명 */}
+            <section>
+              <AnimatedSection delay={350}>
+                <div className='border-b border-gray-600 pb-10 mb-10'>
+                  <div className='text-lg'>
+                    If you would like to stay informed about our updates and the launch of new projects, please visit our news page.
+                  </div>
+                  <Link href="/newspage">
+                    <h4 className="text-lg cursor-pointer gold mt-5">
+                      <ColorChange duration={1000} animate={true}>
+                        Go to news page
+                      </ColorChange>
+                    </h4>
+                  </Link>
+                </div>
+              </AnimatedSection>
+            </section>
           </div>
         )}
+           <section>
+              <AnimatedSection delay={350}>
+                <div className='text-lg border-b border-gray-600 pb-10 sm:pr-30 md:pr-50 lg:pr-80 sm:pl-30 md:pl-60 lg:pl-80'>
+                  <h4 className="mb-10">
+                    Stay tuned as we continue to share our work and upcoming projects with you.
+                  </h4>
+                  <h4 className="mb-10">
+                    If you encounter any issues while using our project, please contact us at "coconut1357911@gmail.com". We value your feedback and will do our best to address any problems you may have.
+                  </h4>
+                  <h4 className="mb-10">
+                    Thank you for visiting our website, and we hope you enjoy exploring our projects!
+                  </h4>
+                </div>
+              </AnimatedSection>
+            </section>
       </div>
     </div>
   );

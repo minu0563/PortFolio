@@ -23,9 +23,10 @@ export default function Home() {
   useEffect(() => {
     const tagFromURL = (searchParams.get('tag') ?? 'all').toLowerCase();
     const validTags = ['all', 'update', 'released', 'other'];
-    setCurrentTag(
-      validTags.includes(tagFromURL) ? tagFromURL as any : 'all'
-    );
+    const newTag = validTags.includes(tagFromURL) ? (tagFromURL as any) : 'all';
+    
+    setCurrentTag(newTag);
+    setPage(1); // 태그가 바뀌면 항상 1페이지로 리셋
   }, [searchParams]);
 
   // currentTag가 null이면 렌더링 지연
@@ -85,7 +86,8 @@ export default function Home() {
           </div>
         ))}
       </div>
-
+      
+      {/* 페이지네이션 */}
       {totalPages > 1 && (
         <div className="flex items-center gap-6 mb-40 text-white">
           <button
