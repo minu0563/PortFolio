@@ -1,0 +1,32 @@
+1. data/newsData 속에 새로운 항목 생성하면 카드 생성됨
+
+각 항목 
+    - id: 이전 + 1
+
+    - title: 뉴스 title
+
+    - contents 소제목 없는 본문
+            - 절 구분 : 배열에 문장 나누기
+
+    - readtime: 예상 읽는 시간
+
+    - sections: 소제목 포함한 내용
+            - subheading: 소제목
+            - sc: 소제목의 본문
+            - bp: bullet point
+
+    - last: 마지막 말 
+
+
+필수 : id , title, contents, readtime
+
+update
+    - 버그 수정 : The bug that occurred in our extension was that the process of automatically skipping YouTube Shorts did not function smoothly.
+    - 소제목1 : the issue that occurred (발생 문제)
+    - 소제목2 : Fix Summary (수정 내역)
+
+    - 기능 추가 : Today, we introduced a new feature to our extension, “CoCoNuT: Convenient YouTube Viewing Tools,” to provide a more stable and reliable user experience.
+    - 소제목 1 : Added features
+
+last  
+    - "We will continue to improve your convenience and viewing experience through consistent updates. If you encounter any new issues, please feel free to contact us at "coconut1357911@gmail.com". We appreciate your feedback."

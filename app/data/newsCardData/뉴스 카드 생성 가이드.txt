@@ -4,7 +4,6 @@
     - id: 이전 + 1
     - title: "뉴스 title"
     - description: "뉴스 설명 요약 간단하게"
-    - image: "이미지"
     - tag: "뉴스 카드 태그 설명 가이드에 따라 지정"
     - date: "날짜 (YYYY.MM.DD)
     - newspagelink: "클릭시 이동할 폴더 이름"

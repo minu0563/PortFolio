@@ -13,11 +13,6 @@ interface Props {
 export default function SlideNav({ page, setPage, className = "" }: Props) {
   const { theme } = useTheme();
 
-  const ONBC =
-    theme === 'theme-dark'
-      ? 'border-white text-white'
-      : 'border-black text-black';
-
   const OFFBC =
     theme === 'theme-dark'
       ? 'border-gray-400 text-gray-400'
@@ -28,7 +23,7 @@ export default function SlideNav({ page, setPage, className = "" }: Props) {
       <AnimatedSection anitype={1} delay={1000}>
         <button
           onClick={() => setPage(0)}
-          className={`px-4 py-2 border ${page === 0 ? `${ONBC}` : `${OFFBC}`
+          className={`px-4 py-2 border ${page === 0 ? `` : `${OFFBC}`
             }`}
         >
           Portfolio
@@ -38,7 +33,7 @@ export default function SlideNav({ page, setPage, className = "" }: Props) {
       <AnimatedSection anitype={1} delay={1200}>
         <button
           onClick={() => setPage(1)}
-          className={`px-4 py-2 border ${page === 1 ? `${ONBC}` : `${OFFBC}`
+          className={`px-4 py-2 border ${page === 1 ? ` `: `${OFFBC}`
             }`}
         >
           Settings
