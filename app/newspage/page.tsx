@@ -89,7 +89,7 @@ export default function Home() {
       
       {/* 페이지네이션 */}
       {totalPages > 1 && (
-        <div className="flex items-center gap-6 mb-40 text-white">
+        <div className="flex items-center gap-6 mb-40">
           <button
             onClick={() => setPage(p => Math.max(1, p - 1))}
             disabled={page === 1}

@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { getTheme } from '@/app/components/theme/useTheme';
 import { useEffect, useState } from 'react';
+import ColorChange from '@/app/components/animation/ColorChange';
 
 export default function Home() {
   const nowTheme = getTheme();
@@ -48,9 +49,11 @@ export default function Home() {
       <hr className="my-12 md:my-16" />
 
       {/* Programming Study Section */}
-      <section id="study" className="py-16">
-        <h2 className="text-3xl font-bold text-center mb-12">
-          Programming Study
+      <section id="study" className="">
+        <h2 className="text-4xl font-bold text-center mb-12">
+          <ColorChange animate={true}>
+            Programming Study
+          </ColorChange>
         </h2>
         <AnimatedSection delay={100} className={`${boxColor} rounded-lg shadow-xl overflow-hidden p-8`}>
           <div className='relative w-full h-[400px] mb-6'>
@@ -73,10 +76,12 @@ export default function Home() {
 
       <hr className="my-12 md:my-16" />
 
-      {/* Projects Section */}
+      {/* Projects(Extension) Section */}
       <section id="projects" className="py-16">
-        <h2 className="text-3xl font-bold text-center mb-12">
-          Project
+        <h2 className="text-4xl font-bold text-center mb-12">
+          <ColorChange animate={true}>
+            Project - extension
+          </ColorChange>
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
@@ -90,7 +95,7 @@ export default function Home() {
               <h3 className="text-2xl font-bold mb-3">YouTube Convenience Extension</h3>
               <p className="mb-4">
                 Developed a Chrome extension to improve the YouTube viewing experience by solving daily inconveniences.
-                Reached over <strong>3,000 visitors</strong> and <strong>200 active users</strong>.
+                Reached over <strong>8,000 visitors</strong> and <strong>600 active users</strong>.
               </p>
               <ul className="list-disc list-inside mb-6">
                 <li>Auto-adjusts video quality</li>
@@ -109,7 +114,7 @@ export default function Home() {
                 <Link href="/extensionpage" className="bg-white text-black px-4 py-2 rounded-md font-semibold hover:bg-gray-200">
                   extension
                 </Link>
-                <Link href="/githubiscomingsoon" target="_blank" rel="noopener noreferrer" className="bg-gray-800 text-white px-4 py-2 rounded-md font-semibold hover:bg-gray-900">
+                <Link href="https://github.com/minu0563/CoCoNuT_Youtube" rel="noopener noreferrer" className="bg-gray-800 text-white px-4 py-2 rounded-md font-semibold hover:bg-gray-900">
                   GitHub
                 </Link>
               </div>
@@ -117,32 +122,76 @@ export default function Home() {
           </AnimatedSection>
 
           {/* Project 2 */}
-          <AnimatedSection delay={300} className={`${boxColor} rounded-lg shadow-xl overflow-hidden`}>
+          <AnimatedSection delay={200} className={`${boxColor} rounded-lg shadow-xl overflow-hidden`}>
             <div className='relative w-full h-[300px] '>
-              <Image src="/kwakp3.png" alt="project1" fill className="object-contain pr-5 pl-5" />
+              <Image src="/kwakp3_v2.png" alt="project2" fill className="object-contain pr-5 pl-5" />
             </div>
             <div className="p-6">
-              <h3 className="text-2xl font-bold mb-3">Real-Time Translation Application</h3>
-              <p className=" mb-4">
-                Developed during an AI hackathon — a program that translates spoken language into Korean in real time. <br />
-                Built using <strong>Python</strong>, <strong>OpenCV</strong>, <strong>MediaPipe</strong>, and <strong>SpeechRecognition</strong>.
+              <h3 className="text-2xl font-bold mb-3">Clicker Game Extension</h3>
+              <p className="mb-4">
+               Developed a Chrome extension to help users pass time and reduce boredom during their free moments.
+              Achieved over <strong>2,000</strong> visits and <strong>200</strong> active users.
               </p>
+              <ul className="list-disc list-inside mb-6">
+                <li>Obtain coconuts with simple clicks</li>
+                <li>Simple gacha game using coconuts</li>
+                <li>Coconut stock system</li>
+              </ul>
               <p>Tech Stack:</p>
               <ul className="list-disc list-inside mb-6">
-                <li>Python</li>
-                <li>OpenCV</li>
-                <li>MediaPipe</li>
-                <li>SpeechRecognition</li>
+                <li>html, css, js</li>
               </ul>
               <div className="flex gap-4">
-                <Link href="/githubiscomingsoon" target="_blank" rel="noopener noreferrer" className="bg-gray-800 text-white px-4 py-2 rounded-md font-semibold hover:bg-gray-900">
+                <Link href="https://chromewebstore.google.com/detail/get-coconut/hebdcmlfkpcjgjkaeifikhpnkbndalla?hl=ko&utm_source=ext_sidebar"
+                  target="_blank" rel="noopener noreferrer" className="bg-blue-600 text-white px-4 py-2 rounded-md font-semibold hover:bg-blue-700">
+                  Web Store
+                </Link>
+                <Link href="/extensionpage" className="bg-white text-black px-4 py-2 rounded-md font-semibold hover:bg-gray-200">
+                  extension
+                </Link>
+                <Link href="https://github.com/minu0563/CoCoNuT_clickgame" target="_blank" rel="noopener noreferrer" className="bg-gray-800 text-white px-4 py-2 rounded-md font-semibold hover:bg-gray-900">
                   GitHub
                 </Link>
               </div>
             </div>
           </AnimatedSection>
-
         </div>
+      </section>
+
+      <hr className="my-12 md:my-16" />
+
+      {/* project(Awards) Section */}
+      <section id="awards" className="py-16">
+        <h2 className="text-4xl font-bold text-center mb-12">
+          <ColorChange animate={true}>
+            Project - web 
+          </ColorChange>
+        </h2>
+        <AnimatedSection delay={100} className={`${boxColor} rounded-lg shadow-xl overflow-hidden p-8`}>
+          <div className='relative w-full h-[400px] '>
+            <Image src="/kwakp5_v2.png" alt="project1" fill className="object-contain pr-5 pl-5 pb-5" />
+          </div>
+
+          <p className="mb-4 text-center text-2xl">
+            <strong>CoCoNuT Official Website</strong>
+          </p>
+          <p className="mb-4 text-center">
+              This website was developed to share development and update news about our projects, <br/> as well as to introduce our projects and present our portfolio.
+          </p>
+          <ul className='list-disc list-inside mb-6 text-center'>
+            <li>Next.js</li>
+            <li>TypeScript</li>
+            <li> Tailwind CSS</li>
+          </ul>
+          <div className="flex justify-center gap-4">
+            <Link href="/" className="bg-white text-black px-4 py-2 rounded-md font-semibold hover:bg-gray-200">
+              Website
+            </Link>
+            <Link href="https://github.com/minu0563/PortFolio" target="_blank" rel="noopener noreferrer" className="bg-gray-800 text-white font-semibold px-6 py-3 rounded-lg hover:bg-gray-900 transition-colors">
+              Github
+            </Link>
+          </div>
+        </AnimatedSection>
       </section>
 
       <hr className="my-12 md:my-16" />
