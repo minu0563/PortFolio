@@ -8,7 +8,7 @@ export default function Home() {
                 <TextShuffle speed={20}>
                 The GitHub repository will be released soon.
                 </TextShuffle>
-            </p>
+       </p>
         </div>
     );
 }

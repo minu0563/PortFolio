@@ -46,7 +46,7 @@ export default function Portfolio() {
             </Link>
           </div>
         </AnimatedSection>
-        
+
         {/* ParkJuHyun */}
         <AnimatedSection delay={100}>
           <div
@@ -62,7 +62,7 @@ export default function Portfolio() {
             <div className="relative w-[275px] aspect-[275/370] mb-4">
               <Image src="/park.jpg" alt="park" fill className="rounded-md object-cover" />
             </div>
-            <Link href="/aboutpage/ParkJuHyun" className="block text-center text-[21px] bg-clip-text text-transparent bg-gradient-to-r from-white to-blue-400 shadow">
+            <Link href="/githubiscomingsoon" className="block text-center text-[21px] bg-clip-text text-transparent bg-gradient-to-r from-white to-blue-400 shadow">
               Park Ju Hyun
             </Link>
           </div>
