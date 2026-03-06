@@ -39,7 +39,7 @@ export default function Portfolio() {
               }`}
           >
           <div className="relative w-[275px] aspect-[275/370] mb-4">
-            <Image src="/kwak.jpg" alt="kwak" fill className="rounded-md object-cover" />
+            <Image src="/kwak_v2.jpg" alt="kwak" fill className="rounded-md object-cover" />
           </div>
             <Link href="/aboutpage/KwakDoYoung" className="block text-center text-[21px] bg-clip-text text-transparent bg-gradient-to-r from-white to-red-400 shadow">
               Kwak Do Young
@@ -60,7 +60,7 @@ export default function Portfolio() {
               }`}
           >
             <div className="relative w-[275px] aspect-[275/370] mb-4">
-              <Image src="/park.jpg" alt="park" fill className="rounded-md object-cover" />
+              <Image src="/park_v2.jpg" alt="park" fill className="rounded-md object-cover" />
             </div>
             <Link href="/githubiscomingsoon" className="block text-center text-[21px] bg-clip-text text-transparent bg-gradient-to-r from-white to-blue-400 shadow">
               Park Ju Hyun
