@@ -27,9 +27,9 @@ export const metadata: Metadata = {
       },
     ]
   },
-  icons: {
-    icon: "/favicon.png",
-  },
+  // icons: {
+  //   icon: "/favicon.png",
+  // },
   alternates: {
     canonical: "https://coconut-official-website.vercel.app"
   }
