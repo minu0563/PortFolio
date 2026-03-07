@@ -9,7 +9,7 @@ import ThemeLint from "./components/theme/themelint";
 import HeaderMenu from "./components/HeaderMenu.tsx/page";
 
 // for seo
-export const metadata = {
+export const metadata: Metadata = {
   metadataBase: new URL("https://coconut-official-website.vercel.app/"),
   title: "CoCoNuT Official Website",
   description: "Official website of CoCoNuT. News, updates and portfolio.",
@@ -29,6 +29,9 @@ export const metadata = {
   },
   icons: {
     icon: "/favicon.png",
+  },
+  alternates: {
+    canonical: "https://coconut-official-website.vercel.app"
   }
 };
 
@@ -39,7 +42,23 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <ThemeLint />
         <meta name="google-site-verification" content="n9f7gWKVxvkDZGS1mVaHIKMDO9x_OCouoxhgSf1zMZk" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "CoCoNuT",
+              url: "https://coconut-official-website.vercel.app",
+              logo: "https://coconut-official-website.vercel.app/favicon.png"
+            }),
+          }}
+        />
+
+        <meta property="og:site_name" content="CoCoNuT" />
+        <meta name="application-name" content="CoCoNuT" />
       </head>
+
       <body id="app-body" className="flex flex-col min-h-screen font-stretch-75% font-juache">
         <HeaderMenu />
 
