@@ -52,19 +52,19 @@ export default function NewsPageClient() {
   return (
     <div className='flex flex-col items-center px-6'>
       {/* Header */}
-      <section className="mt-32 mb-15 2xl:mt-32 2xl:mb-5 text-center">
+      <section className="mt-32 mb-13 sm:mb-15 2xl:mt-32 2xl:mb-5 text-center">
         <AnimatedSection>
           <h1 className="text-6xl gold font-bold">
             <ColorChange animate>News</ColorChange>
           </h1>
         </AnimatedSection>
-        <div className="mt-6 text-lg lg:text-xl text-gray-400 max-w-4xl">
+        <div className="mt-6 text-[16px] sm:text-lg lg:text-xl text-gray-400 max-w-4xl">
           <p>Stay updated with CoCoNuT updates and releases.</p>
         </div>
       </section>
 
       {/* 태그 선택 */}
-      <div className="absolute top-75 2xl:top-180 2xl:right-8 z-50">
+      <div className="absolute top-80 sm:top-80 2xl:top-180 2xl:right-8 z-50">
         <NewsTagSelector />
       </div>
 

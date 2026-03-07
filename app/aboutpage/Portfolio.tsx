@@ -26,7 +26,7 @@ export default function Portfolio() {
       </h1>
 
       {/* 카드 grid */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
 
         {/* Kwak */}
         <AnimatedSection delay={50}>

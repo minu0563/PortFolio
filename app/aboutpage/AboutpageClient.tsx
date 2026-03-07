@@ -37,7 +37,7 @@ export default function AboutpageClient() {
         <div
           className={`
               absolute w-full px-6
-              ${page === 0 ? "top-[calc(60%-30px)] lg:top-46" : "bottom-2"}
+              ${page === 0 ? "top-[calc(60%-30px)] lg:top-auto lg:bottom-6" : "bottom-2"}
             `}>
           <SlideNav page={page} setPage={setPage} className='' />
         </div>
