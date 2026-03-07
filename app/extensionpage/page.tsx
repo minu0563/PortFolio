@@ -1,7 +1,7 @@
 import ExtensionClient from "./ExtensionClient";
 
 export const metadata = {
-  title: "CoCoNuT's Extensions Page",
+  title: "CoCoNuT's Extensions Page | CoCoNuT",
   description: "Explore our collection of useful browser extensions designed to enhance your browsing experience.",
 };
 
