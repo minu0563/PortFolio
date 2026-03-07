@@ -316,7 +316,7 @@ export default function Home() {
           </h2>
           <AnimatedSection delay={100} className={`${boxColor} rounded-lg shadow-xl overflow-hidden p-8`}>
             <div className='relative w-full aspect-[16/9] '>
-              <Image src="/kwak7.jpg" alt="project1" fill className="object-contain pr-5 pl-5 pb-5" />
+              <Image src="/kwak7.JPG" alt="project1" fill className="object-contain pr-5 pl-5 pb-5" />
             </div>
 
             <p className="mb-4 text-center text-2xl">
