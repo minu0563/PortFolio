@@ -8,6 +8,11 @@ import { useState } from 'react';
 import { FAQData1 } from '@/app/data/FAQData/FAQData1';
 import FAQ1 from '@/app/components/FAQ/FAQ1';
 
+export const metadata = {
+  title: "CoCoNuT: Convenient YouTube Viewing Tools | CoCoNuT",
+  description: "Experience multiple useful YouTube features all in one convenient place.",
+};
+
 export default function ExtensionPage() {
   const [qnaVisibility, setQnaVisibility] = useState([false, false, false]);
 

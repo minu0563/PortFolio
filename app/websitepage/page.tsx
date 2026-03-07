@@ -14,6 +14,11 @@ const websites = [
   },
 ];
 
+export const metadata = {
+  title: "CoCoNuT's Website Page | CoCoNuT",
+  description: "Explore CoCoNuT's Web Projects.",
+};
+
 export default function WebSite() {
   return (
     <div className="flex flex-col items-center text-center px-6">

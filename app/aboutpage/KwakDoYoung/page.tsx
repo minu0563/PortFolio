@@ -6,6 +6,11 @@ import { getTheme } from '@/app/components/theme/useTheme';
 import { useEffect, useState } from 'react';
 import ColorChange from '@/app/components/animation/ColorChange';
 
+export const metadata = {
+  title: "Kwak Do Young | CoCoNuT",
+  description: "Learn more about Kwak Do Young, a developer exploring web usability and artificial intelligence.",
+};
+
 export default function Home() {
   const nowTheme = getTheme();
   const [boxColor, setBoxColor] = useState('');

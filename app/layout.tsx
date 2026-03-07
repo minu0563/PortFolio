@@ -12,14 +12,19 @@ import HeaderMenu from "./components/HeaderMenu.tsx/page";
 export const metadata = {
   title: "CoCoNuT Official Website",
   description: "Official website of CoCoNuT. News, updates and portfolio.",
-  keywords: ["coconut", "coconut dev", "coconut website", "CoCoNuT", "CoCoNuT Official Website", "CoCoNuT Portfolio", "CoCoNuT News", "CoCoNuT Updates",
-    "CoCoNuT Extensions", "CoCoNuT Web Projects", "CoCoNuT Team", "CoCoNuT Community", "coconut extension", "coconut web projects", "coconut team", "coconut community"
-  ],
+  keywords: ["coconut", "coconut dev", "coconut website"],
   openGraph: {
-    title: "CoCoNuT Official Website",
-    description: "Official website of CoCoNuT.",
+    title: "CoCoNuT Official Website | CoCoNuT",
+    description: "Official website of CoCoNuT. News, updates and portfolio.",
     url: "https://coconut-official-website.vercel.app",
     siteName: "CoCoNuT",
+    images: [
+      {
+        url: "/og.png",
+        width: 1200,
+        height: 549,
+      },
+    ]
   },
   icons: {
     icon: "/favicon.png",

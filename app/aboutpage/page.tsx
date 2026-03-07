@@ -6,6 +6,11 @@ import Settings from './Settings';
 import SlideNav from './SlideNav';
 import { useAboutPageStore } from '../store/aboutPageStore';
 
+export const metadata = {
+  title: "About CoCoNuT | CoCoNuT",
+  description: "Learn more about CoCoNuT, our team, and our projects.",
+};
+
 export default function AboutPage() {
   const [mounted, setMounted] = useState(false);
   const { page, setPage } = useAboutPageStore();

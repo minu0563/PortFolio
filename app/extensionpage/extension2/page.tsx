@@ -8,6 +8,11 @@ import { useState } from 'react';
 import { FAQData2 } from '@/app/data/FAQData/FAQData2';
 import FAQ2 from '@/app/components/FAQ/FAQ2';
 
+export const metadata = {
+  title: "Get CoCoNuT!! | CoCoNuT",
+  description: "A clicker game where you obtain coconuts with simple clicks and complete achievements.",
+};
+
 export default function ExtensionPage() {
   const [qnaVisibility, setQnaVisibility] = useState([false, false, false]); 
 

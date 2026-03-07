@@ -20,6 +20,11 @@ const extensions = [
   },
 ];
 
+export const metadata = {
+  title: "CoCoNuT's Extensions Page",
+  description: "Explore our collection of useful browser extensions designed to enhance your browsing experience.",
+};
+
 export default function ExtensionPage() {
   return (
     <div className="flex flex-col items-center text-center px-6">

@@ -8,6 +8,11 @@ import { useState } from 'react';
 import { FAQData1 } from '@/app/data/FAQData/FAQData1';
 import FAQ1 from '@/app/components/FAQ/FAQ1';
 
+export const metadata = {
+  title: "CoCoNuT's Official Website | CoCoNuT",
+  description: "Explore CoCoNuT's Official Website Projects.",
+};
+
 export default function ExtensionPage() {
   const [qnaVisibility, setQnaVisibility] = useState([false, false, false]);
 

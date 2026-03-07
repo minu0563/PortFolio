@@ -8,6 +8,11 @@ import ColorChange from './components/animation/ColorChange';
 import Banner from './components/animation/Banner';
 import { useState } from 'react';
 
+export const metadata = {
+  title: "CoCoNuT Official Website | CoCoNuT",
+  description: "Explore CoCoNuT projects, extensions, and the latest updates on the official website.",
+};
+
 export default function Home() {
   const boxes = [
     {
