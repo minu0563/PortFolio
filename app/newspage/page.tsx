@@ -52,19 +52,19 @@ export default function Home() {
   return (
     <div className='flex flex-col items-center px-6'>
       {/* Header */}
-      <section className="mt-32 mb-5 text-center">
+      <section className="mt-20 mb-15 md:mt-32 md:mb-5 text-center">
         <AnimatedSection>
           <h1 className="text-6xl gold font-bold">
             <ColorChange animate>News</ColorChange>
           </h1>
         </AnimatedSection>
-        <div className="mt-6 text-xl text-gray-400 max-w-2xl">
+        <div className="mt-6 text-lg lg:text-xl text-gray-400 max-w-4xl">
           <p>Stay updated with CoCoNuT updates and releases.</p>
         </div>
       </section>
 
       {/* 태그 선택 */}
-      <div className="fixed bottom-10 right-8 z-50">
+      <div className="absolute top-75 lg:top-auto lg:bottom-1 lg:right-8 z-50">
         <NewsTagSelector />
       </div>
 

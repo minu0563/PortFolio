@@ -50,14 +50,18 @@ export default function Home() {
 
       {/* Programming Study Section */}
       <section id="study" className="">
-        <h2 className="text-4xl font-bold text-center mb-12">
+        <h2 className="text-4xl font-bold text-center mb-12 gold">
           <ColorChange animate={true}>
             Programming Study
           </ColorChange>
         </h2>
         <AnimatedSection delay={100} className={`${boxColor} rounded-lg shadow-xl overflow-hidden p-8`}>
-          <div className='relative w-full h-[400px] mb-6'>
-            <Image src="/kwakp1.png" alt="Baekjoon Online Judge" fill className="object-contain" />
+          <div className="relative w-full aspect-[16/9] max-h-[400px] mb-6">
+            <img
+              src="/kwakp1.png"
+              alt="Baekjoon Online Judge"
+              className="object-contain"
+            />
           </div>
           <p className="mb-6 text-center">
             Studied algorithmic problem-solving using <strong>Python</strong> and <strong>C</strong> through <strong>Baekjoon</strong> Online Judge.
@@ -78,7 +82,7 @@ export default function Home() {
 
       {/* Projects(Extension) Section */}
       <section id="projects" className="py-16">
-        <h2 className="text-4xl font-bold text-center mb-12">
+        <h2 className="text-4xl font-bold text-center mb-12 gold">
           <ColorChange animate={true}>
             Project - extension
           </ColorChange>
@@ -109,7 +113,7 @@ export default function Home() {
               <div className="flex gap-4">
                 <Link href="https://chromewebstore.google.com/detail/coconut-%EB%8B%B9%EC%8B%A0%EC%9D%98-%ED%8E%B8%EB%A6%AC%ED%95%9C-%EC%9C%A0%ED%8A%9C%EB%B8%8C-%EC%8B%9C%EC%B2%AD%EC%9D%84-%EC%9C%84/ckdkiedamneebnodcphbohikgccaheon?hl=ko"
                   target="_blank" rel="noopener noreferrer" className="bg-blue-600 text-white px-4 py-2 rounded-md font-semibold hover:bg-blue-700">
-                  Web Store
+                  Store
                 </Link>
                 <Link href="/extensionpage" className="bg-white text-black px-4 py-2 rounded-md font-semibold hover:bg-gray-200">
                   extension
@@ -144,7 +148,7 @@ export default function Home() {
               <div className="flex gap-4">
                 <Link href="https://chromewebstore.google.com/detail/get-coconut/hebdcmlfkpcjgjkaeifikhpnkbndalla?hl=ko&utm_source=ext_sidebar"
                   target="_blank" rel="noopener noreferrer" className="bg-blue-600 text-white px-4 py-2 rounded-md font-semibold hover:bg-blue-700">
-                  Web Store
+                  Store
                 </Link>
                 <Link href="/extensionpage" className="bg-white text-black px-4 py-2 rounded-md font-semibold hover:bg-gray-200">
                   extension
@@ -162,13 +166,13 @@ export default function Home() {
 
       {/* project(web) Section */}
       <section id="awards" className="py-16">
-        <h2 className="text-4xl font-bold text-center mb-12">
+        <h2 className="text-4xl font-bold text-center mb-12 gold">
           <ColorChange animate={true}>
             Project - Web 
           </ColorChange>
         </h2>
         <AnimatedSection delay={100} className={`${boxColor} rounded-lg shadow-xl overflow-hidden p-8`}>
-          <div className='relative w-full h-[400px] '>
+          <div className='relative w-full aspect-[16/9] '>
             <Image src="/kwakp5_v2.png" alt="project1" fill className="object-contain pr-5 pl-5 pb-5" />
           </div>
 
@@ -198,7 +202,7 @@ export default function Home() {
 
       {/* Project(Competition) Section */}
       <section id="projects" className="py-16">
-        <h2 className="text-4xl font-bold text-center mb-12">
+        <h2 className="text-4xl font-bold text-center mb-12 gold">
           <ColorChange animate={true}>
             Project - Competition
           </ColorChange>
@@ -208,7 +212,7 @@ export default function Home() {
 
           {/* Project 1 */}
           <AnimatedSection delay={200} className={`${boxColor} rounded-lg shadow-xl overflow-hidden`}>
-            <div className='relative w-full h-[300px] '>
+            <div className='relative w-full aspect-[16/9] max-h-[400px] '>
               <Image src="/kwak8.jpg" alt="project1" fill className="object-contain pr-5 pl-5" />
             </div>
             <div className="p-6">
@@ -272,7 +276,7 @@ export default function Home() {
 
         <div>
           <AnimatedSection delay={100} className={`${boxColor} rounded-lg shadow-xl overflow-hidden p-8`}>
-            <div className='relative w-full h-[400px] '>
+            <div className='relative w-full aspect-[16/9] '>
               <Image src="/kwakp4_v2.png" alt="project1" fill className="object-contain pr-5 pl-5 pb-5" />
             </div>
 
@@ -305,13 +309,13 @@ export default function Home() {
 
         {/*first award*/}
         <div className='mb-30'>
-          <h2 className="text-4xl font-bold text-center mb-12">
+          <h2 className="text-4xl font-bold text-center mb-12 gold">
             <ColorChange animate={true}>
               Awards
             </ColorChange>
           </h2>
           <AnimatedSection delay={100} className={`${boxColor} rounded-lg shadow-xl overflow-hidden p-8`}>
-            <div className='relative w-full h-[400px] '>
+            <div className='relative w-full aspect-[16/9] '>
               <Image src="/kwak7.jpg" alt="project1" fill className="object-contain pr-5 pl-5 pb-5" />
             </div>
 
@@ -339,7 +343,7 @@ export default function Home() {
         {/*second award*/}
         <div>
           <AnimatedSection delay={100} className={`${boxColor} rounded-lg shadow-xl overflow-hidden p-8`}>
-            <div className='relative w-full h-[400px] '>
+            <div className='relative w-full aspect-[16/9]'>
               <Image src="/kwak8.jpg" alt="project1" fill className="object-contain pr-5 pl-5 pb-5" />
             </div>
 

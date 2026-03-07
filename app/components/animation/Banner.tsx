@@ -59,10 +59,9 @@ export default function Banner({ boxes, bgColors }: BannerProps) {
 
   return (
     <div
-      className={`pt-60 pb-70 ${bgAnimClass} w-full`}
+      className={`pt-50 pb-0 sm:pb-50 sm:pt-60 md:pb-70 ${bgAnimClass} w-full min-h-[70vh]`}
       style={{
         '--bg-color': bgColor,
-        height: 'min(80vw, 90vh)',
       } as React.CSSProperties}
     >
       <div className="flex justify-center items-start">
@@ -71,7 +70,7 @@ export default function Banner({ boxes, bgColors }: BannerProps) {
         </p>
       </div>
 
-      <div className="flex animate-fadeup-3">
+      <div className="hidden sm:block flex animate-fadeup-3">
         <Image src="/ARROW-L.png" alt="" width={40} height={40} className="ml-5 cursor-pointer" onClick={prevBox} />
         <Image src="/ARROW-R.png" alt="" width={40} height={40} className="ml-auto mr-5 cursor-pointer" onClick={nextBox} />
       </div>

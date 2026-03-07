@@ -36,12 +36,10 @@ export default function AboutPage() {
       <span className='@container'>
         <div
           className={`
-              absolute
-              ${page === 0 ? "top-30 right-27 sm:right-5 @4xl:top-55" : "bottom-2 right-2"} 
-              2xl:bottom-4 2xl:right-8
-            `}
-        >
-          <SlideNav page={page} setPage={setPage} className={`${page === 1 ? 'gap-60 sm:gap-4' : ''}`} />
+              absolute w-full px-6
+              ${page === 0 ? "top-[calc(60%-30px)] lg:top-46" : "bottom-2"}
+            `}>
+          <SlideNav page={page} setPage={setPage} className='' />
         </div>
       </span>
     </div>

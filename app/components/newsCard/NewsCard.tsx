@@ -31,16 +31,16 @@ const NewsCard: React.FC<NewsCardProps> = ({ item, isHovered, isOtherHovered, on
             onMouseEnter={onHover}
             onMouseLeave={onLeave}
             className={`
-                flex overflow-hidden w-full max-w-4xl m-3 cursor-pointer items-center
+                flex overflow-hidden w-full max-w-4xl cursor-pointer items-center
                 transition-transform duration-300
                 ${boxColor} hover:shadow-xl
                 ${isHovered ? 'scale-101 z-10' : ''}
                 ${isOtherHovered ? 'scale-99 blur-sm' : ''}
             `}
         >   
-            <div className="p-4 ml-10 flex flex-col justify-center gap-y-4">
-                <h3 className="text-lg sm:text-xl font-semibold gold">{item.title}</h3>
-                <p className="text-sm sm:text-base text-gray-500">{item.description}</p>
+            <div className="p-4 ml-3 lg:ml-10 flex flex-col justify-center gap-y-4">
+                <h3 className="text-sm sm:text-xl font-semibold gold">{item.title}</h3>
+                <p className="text-[10px] sm:text-base text-gray-500">{item.description}</p>
             </div>
             <div className="text-gray-400 text-right ml-auto mb-5 mr-5">
                 <StatusColor>

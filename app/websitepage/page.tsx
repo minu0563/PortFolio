@@ -8,7 +8,7 @@ import StatusColor from '../components/status/page';
 const websites = [
   {
     slug: 'website1',
-    name: 'CoCoNuT',
+    name: 'CoCoNuT Official Website',
     desc: '“This website showcases our team project and individual portfolios.”',
     status: 'Released',
   },

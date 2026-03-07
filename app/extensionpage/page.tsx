@@ -51,7 +51,7 @@ export default function ExtensionPage() {
                 <div className="border border-gray-600 p-8 cursor-pointer hover:border-gray-400 transition">
 
                   <div className="flex justify-between items-center mb-4">
-                    <h2 className="text-2xl gold">
+                    <h2 className="text-lg md:text-2xl gold">
                       {ext.name}
                     </h2>
 
@@ -62,7 +62,7 @@ export default function ExtensionPage() {
                     </span>
                   </div>
 
-                  <p className="text-gray-400 text-left">
+                  <p className="text-sm md:text-lg text-gray-400 text-left">
                     {ext.desc}
                   </p>
 
