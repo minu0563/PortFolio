@@ -57,6 +57,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
         <meta property="og:site_name" content="CoCoNuT" />
         <meta name="application-name" content="CoCoNuT" />
+        <link rel="icon" href="/favicon.png" />
       </head>
 
       <body id="app-body" className="flex flex-col min-h-screen font-stretch-75% font-juache">
