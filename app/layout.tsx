@@ -10,6 +10,7 @@ import HeaderMenu from "./components/HeaderMenu.tsx/page";
 
 // for seo
 export const metadata = {
+  metadataBase: new URL("https://coconut-official-website.vercel.app/"),
   title: "CoCoNuT Official Website",
   description: "Official website of CoCoNuT. News, updates and portfolio.",
   keywords: ["coconut", "coconut dev", "coconut website"],
