@@ -32,6 +32,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className="theme-dark" suppressHydrationWarning>
       <head>
         <ThemeLint />
+        <meta name="google-site-verification" content="n9f7gWKVxvkDZGS1mVaHIKMDO9x_OCouoxhgSf1zMZk" />
       </head>
       <body id="app-body" className="flex flex-col min-h-screen font-stretch-75% font-juache">
         <HeaderMenu />
