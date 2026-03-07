@@ -8,6 +8,24 @@ import ColorChange from "./components/animation/ColorChange";
 import ThemeLint from "./components/theme/themelint";
 import HeaderMenu from "./components/HeaderMenu.tsx/page";
 
+// for seo
+export const metadata = {
+  title: "CoCoNuT Official Website",
+  description: "Official website of CoCoNuT. News, updates and portfolio.",
+  keywords: ["coconut", "coconut dev", "coconut website", "CoCoNuT", "CoCoNuT Official Website", "CoCoNuT Portfolio", "CoCoNuT News", "CoCoNuT Updates",
+    "CoCoNuT Extensions", "CoCoNuT Web Projects", "CoCoNuT Team", "CoCoNuT Community", "coconut extension", "coconut web projects", "coconut team", "coconut community"
+  ],
+  openGraph: {
+    title: "CoCoNuT Official Website",
+    description: "Official website of CoCoNuT.",
+    url: "https://coconut-official-website.vercel.app",
+    siteName: "CoCoNuT",
+  },
+  icons: {
+    icon: "/favicon.png",
+  }
+};
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 
   return (
