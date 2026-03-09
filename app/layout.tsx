@@ -7,6 +7,7 @@ import Link from "next/link";
 import ColorChange from "./components/animation/ColorChange";
 import ThemeLint from "./components/theme/themelint";
 import HeaderMenu from "./components/HeaderMenu.tsx/page";
+import { Analytics } from "@vercel/analytics/next";
 
 // for seo
 export const metadata: Metadata = {
@@ -69,6 +70,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <footer className="text-center py-2 border-t border-gray-700 flex justify-center">
           <p>© 2025 CoCoNuT. All rights reserved.</p>
         </footer>
+        <Analytics />
       </body>
     </html >
   );
